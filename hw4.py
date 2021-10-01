@@ -82,7 +82,6 @@ class Stall:
     def process_order(self, food, quantity):
         if self.inventory[food] > quantity:
             self.inventory[food] -= quantity
-        #wallet -= cost
 
     def has_item(self, food, quantity):
         if food in self.inventory and int(quantity) <= int(self.inventory[food]):
